@@ -1,0 +1,65 @@
+.container {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.container .head {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  width: 85%;
+  margin: 50px;
+}
+.container .head p {
+  font-family: Roboto, sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  color: #eb566c;
+  text-transform: uppercase;
+}
+.container .head h2 {
+  font-size: 50px;
+  font-weight: 900;
+  color: #092c3f;
+  font-family: Roboto, sans-serif;
+  line-height: 60px;
+}
+.container .carts {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.container .carts .cart {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+}
+.container .carts .cart .text {
+  border: 2px solid transparent;
+}
+.container .carts .cart .text span {
+  font-weight: 700;
+  font-size: 25px;
+  color: #161e46;
+  font-family: Roboto, sans-serif;
+}
+.container .carts .cart .text p {
+  font-size: 14px;
+  font-weight: 300;
+  color: #ff2143;
+  font-family: Roboto, sans-serif;
+}
+
+@media (max-width: 576px) and (min-width: 300px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    height: 500vh;
+  }
+  .container .carts {
+    flex-direction: column;
+  }
+}
